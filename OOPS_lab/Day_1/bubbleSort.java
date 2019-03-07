@@ -19,3 +19,10 @@ class sort_bubble{
         }
     }
 }
+
+/*
+Output:
+java sort_bubble 11 45 67 23 7 5 102 399 88
+Sorted Array:
+5 7 11 23 45 67 88 102 399
+*/
