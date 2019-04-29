@@ -7,3 +7,5 @@ Classes
   6. Static
   7. Inheritance
   8. Finalize
+  9. Inner Classes
+  10. Static Classes
