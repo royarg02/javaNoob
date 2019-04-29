@@ -1,3 +1,9 @@
+/*WAP to maintain the office database using single inheritance. Superclass is Employee that contain the information as follows:
+Emp_code, Emp_name, Address, Ph_no, DA = 10%, HRA = 20%.
+Teaching class contains attribute subject specialization, designation, and office class contains attribute designation.
+Create all the lowest level classes each class having their own basic pay. Implement the inheritance concept of above figure and
+calculate the salary statement for each employee*/
+
 import java.io.*;
 class Employee{
     String Emp_name;
@@ -120,7 +126,7 @@ class Inherit1{
 
 
             case 2:
-            System.out.println("Enter Subject Speacialisation:");
+            System.out.println("Enter Subject Specialisation:");
             String h1 = br.readLine();
 
             System.out.println("Enter Basic Pay:");
