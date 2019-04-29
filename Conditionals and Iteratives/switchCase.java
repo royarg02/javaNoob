@@ -2,6 +2,7 @@ class Switch{
     public static void main(String[] args) {
         //switch-case is kind of similar to if else
         //instead it can only check for equality and only at ONE variable
+        //can also be nested like if statement
         char test = 'A';
         switch(test){   //provide the variable here
             case 'a':   //similar to if(test == 'a')
@@ -41,5 +42,18 @@ class Switch{
         due to similar reason, 'break' statement is not included in 'default'
         case, as the control goes out of the switch block after it anyway
         */
+
+        //from JDK 7, String values can be used as case expresssions
+        String str = "two";
+        switch(str){
+            case "one":
+            System.out.println("This is one");
+            break;
+            case "two":
+            System.out.println("This is two");
+            break;
+            default:
+            System.out.println("Neither one nor two");
+        }
     }
 }

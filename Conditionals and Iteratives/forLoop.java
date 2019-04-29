@@ -13,5 +13,14 @@ class forLoop{
             System.out.println("control is now " + control);
         }
         System.out.println("Exited for-each loop");
+
+        //using for-each to traverse over a multidimensional array
+        int list[][] = {{25,56,1,4},{22,5,90,12},{78,69,42,88}};        //3X4 array
+        for(int x[] : list){
+            for(int y : x){
+                System.out.print(y + " ");
+            }
+            System.out.println();
+        }
     }
 }

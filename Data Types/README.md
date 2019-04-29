@@ -5,3 +5,5 @@ Data Types:
   4. Type casting
   5. Numeric Literals (integer, long, octal, hexadecimal)
   6. More numeric literals (binary, underscore) (SE 7 and above)
+  7. Arrays
+  8. var (JDK 10 and above)
