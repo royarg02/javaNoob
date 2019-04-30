@@ -9,3 +9,5 @@ Classes
   8. Finalize
   9. Inner Classes
   10. Static Classes
+  11. Variable Arguments
+  12. String

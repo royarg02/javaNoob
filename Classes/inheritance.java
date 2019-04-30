@@ -1,5 +1,6 @@
 //inheritance
 //creating a new class from an existing class by inheriting the properties and methods
+//MULTIPLE INHERITANCE IS NOT SUPPORTED IN JAVA
 class Base{
     int dataA, dataB;
     private int dataP;
