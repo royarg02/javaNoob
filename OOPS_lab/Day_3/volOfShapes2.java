@@ -36,7 +36,7 @@ class vol{
         this.volume = 3.14*r*r*h;
     }
     void show(){
-        System.out.print("Area: " + this.volume);
+        System.out.print("Volume: " + this.volume);
     }
 }
 
@@ -46,5 +46,5 @@ java findVolCmd 4
 Area: 64.0
 
 java findVolCmd 2 3 8
-Area: 200.96
+Volume: 200.96
 */

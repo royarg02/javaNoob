@@ -53,7 +53,7 @@ class vol{
         this.volume = 3.14*r*r*h;
     }
     void show(){
-        System.out.print("Area: " + this.volume);
+        System.out.print("Volume: " + this.volume);
     }
 }
 
@@ -64,5 +64,5 @@ Output:
 3->Ellipsoid
 1
 Enter side length: 4
-Area: 64.0
+Volume: 64.0
 */
