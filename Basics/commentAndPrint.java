@@ -20,6 +20,6 @@ class print{
         String text = "formatted text";
         System.out.printf("The printf() function prints %s with more than %s arguments\n",text,"one");
         System.out.printf("%d is the leap year after %d\n",2020,2016);
-        System.out.printf("PI upto 8 decimals: %.8f",Math.PI);
+        System.out.printf("PI upto 8 decimals: %.8f\n",Math.PI);
     }
 }
