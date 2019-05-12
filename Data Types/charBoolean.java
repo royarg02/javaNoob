@@ -24,6 +24,12 @@ class charBoolean {
         // boolean data type: 1 bit, holds either 'true' or 'false'
         boolean isIt = true;
 
+        /*
+         * In C there was nothing called boolean as primitive we had to include <bool.h>
+         * for boolean algebra in Java boolean is a primitive datatype unlike C Java has
+         * true or false in C 0-> means false and and non-zero -> means true
+         * 
+         */
         // boolean variables are generally used in conditional statements
         if (isIt)
             System.out.printf("It is %b\n", isIt);
