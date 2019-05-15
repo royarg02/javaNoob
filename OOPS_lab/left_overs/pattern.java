@@ -1,4 +1,4 @@
-// WAP to print a patter
+// WAP to print a pattern
 // 1
 // 1 0 
 // 1 0 1 
