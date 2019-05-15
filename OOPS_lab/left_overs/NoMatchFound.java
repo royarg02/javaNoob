@@ -23,6 +23,7 @@ class search{
             }
             if(query.equals(cityname[i])){
                 System.out.println("Found");
+                break;
             }
         }
     }
