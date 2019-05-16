@@ -1,5 +1,5 @@
 //interfaces
-//interfaces are kind-of abstract classes, but is different from it in every way
+//interfaces are kind-of abstract classes, but has some key differences
 //That is, it is used to implement "what are the interfaces" instead of "how are they implemented"
 
 interface area{                     //access modifiers can also be specified
@@ -8,7 +8,7 @@ interface area{                     //access modifiers can also be specified
 
 interface peri{
     float getPeri();
-    float PI = 3.1415F;             //interfaces can also have variables which are implicitly 'FINAL' or 'CONSTANT'
+    float PI = 3.1415F;             //interfaces can also have variables which are implicitly 'FINAL', 'CONSTANT', and 'STATIC'
 }
 
 class rect implements area,peri{    //implementing interface 'area', 'peri'. Unlike static classes, a class can implement multiple interfaces

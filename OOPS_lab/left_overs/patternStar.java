@@ -1,29 +1,29 @@
-/* WAP to print a pattern using 2D Array
- 1
- 1 0 
- 1 0 1 
- 1 0 1 0
-*/ 
-class pattern{
+/* WAP to print a pattern using 2D array
+ *
+ * *
+ * * *
+ * * * *
+*/
+
+class patternStar{
     public static void main(String args[]){
-        int A[][] = new int[4][];
+        char a[][]=new char[4][];
         for(int i = 0 ; i < 4 ; i++){
-            A[i] = new int[i+1];
+            a[i] = new char[i+1];
             for(int j = 0 ; j <= i ; j++){
-                A[i][j] = (j+1)%2;
+                a[i][j] = '*';
             }
         }
         for(int i = 0 ; i < 4 ; i++){
             for(int j = 0 ; j <= i ; j++){
-                System.out.print(A[i][j]+" ");
+                System.out.print(a[i][j]+" ");
             }
             System.out.println();
         }
     }
 }
-
 // OUTPUT:
-// 1 
-// 1 0 
-// 1 0 1 
-// 1 0 1 0 
+// *
+// * *
+// * * *
+// * * * *
