@@ -1,4 +1,4 @@
-//priority of interface members(JDK staticMethodsInInterfaces(JDK8)8)
+//priority of interface members(JDK 8)
 //since interfaces can have default implementations and are inheritable, Java defines set of rules about overriding and visibility of
 //the data members and functions of the interfaces
 
