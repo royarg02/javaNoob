@@ -9,7 +9,7 @@ interface parent{
 }
 
 interface child extends parent{             //inherting 'parent'
-    String type = "Child";                  //the child interface can still change the value of the data members, before implementation
+    String type = "Child";                  //the child interface can still change the value of the data members, before implementation(due to higher priority)
     void func3();
 }
 
