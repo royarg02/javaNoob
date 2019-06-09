@@ -4,3 +4,4 @@ Multithreading
   3. Concurrency
   4. isAlive() and join()
   5. Synchronization
+  6. Interthread Communication
