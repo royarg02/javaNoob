@@ -4,35 +4,40 @@
 
 class Control implements Runnable{
     Thread t;
-    boolean threadPause;                                    //thread control flag
+    boolean threadPause;                                    //controls either waiting or resumed
+    boolean threadStop;                                     //controls either running or stopped
     Control(String name){
         this.t = new Thread(this, name);
         this.threadPause = false;                           //thread is default set to run
+        this.threadStop = false;
     }
     synchronized void suspend(){                            //suspend function(synchronized to avoid other thread to interact)
         this.threadPause = true;
     }
-    synchronized void resume(){
-        this.threadPause = false;                           //resume function(also notifies waiting threads)
+    synchronized void resume(){                             //resume function
+        this.threadPause = false;
         notify();
+    }
+    synchronized void stop(){                               //stop function
+        this.threadStop = true;
     }
     public void run(){
         for(int i = 10 ; i > 0 ; --i){
+            if(this.threadStop){                            //returning from run() stops the thread
+                return;
+            }
             System.out.println(t.getName() + ": " + i*i);
-            synchronized(this){                             //synchronized block that periodically checks for control flag
-                while(threadPause){
-                    try{
-                        wait();
-
-                    }
-                    catch(InterruptedException e){
-                    }
-                }
+            while(this.threadPause){                        //peroidically checking whether the thread is put to waiting state or not
                 try{
-                    Thread.sleep(800);                      //sleep to give time for the other threads to continue running
+                    wait();
                 }
-                catch(InterruptedException e){
+                catch(Exception e){
                 }
+            }
+            try{
+                Thread.sleep(800);
+            }
+            catch(Exception e){
             }
         }
     }
@@ -52,12 +57,12 @@ class ControlDemo{
             th1.resume();
             th2.suspend();
             Thread.sleep(5000);
-            System.out.println("Resuming Thread 2 and Suspending Thread 1 ");
+            System.out.println("Resuming Thread 2 and Stopping Thread 1 ");
             th2.resume();
-            th1.suspend();
+            th1.stop();
             Thread.sleep(5000);
             System.out.println("Resuming Thread 1");
-            th1.resume();
+            th1.resume();                                                   //won't display anything as the thread is stopped
             System.out.println("Waiting for the threads to finish...");
             th1.t.join();
             th2.t.join();
