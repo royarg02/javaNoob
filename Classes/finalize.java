@@ -19,12 +19,9 @@ class ExClass{
 
 class finMAIN{
     public static void main(String[] args) {
-        {
-            ExClass obj = new ExClass();
-            obj.show();
-        }
-        //although the function was supposed to be called as such
-        //there is no assurance that the finalize method will be executed before the space is reclaimed
-        //<I guess deprecation was done for good :P>
+        ExClass obj = new ExClass();
+        obj.show();
+        obj = null;                             //made the reference null to remove the created object from memory
+        System.gc();                            //running the garbage collector to invoke finalize()
     }
 }
