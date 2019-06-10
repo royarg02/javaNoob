@@ -14,7 +14,7 @@ class STRING{
         System.out.println("String.valueOf(a) + String.valueOf(b): " + String.valueOf(a) + String.valueOf(b));
 
         //string concatenation operator: joins two strings
-        String example2 = " and also an object";
+        String example2 = new String(" and also an object");                //creating a new string using 'new' operator
         System.out.println("example + example2: " + example + example2);
 
         //string comparision: compares two string by the unicode value of their chartacters
@@ -25,9 +25,10 @@ class STRING{
         System.out.println("example.compareTo(example2): " + example.compareTo(example2));
 
         //Checking two strings for equality
-        String copy = "This is a String";
+        char notAString[] = {'T', 'h', 'i', 's', ' ','i', 's', ' ', 'a', ' ', 'S', 't', 'r', 'i', 'n', 'g'};
+        String copy = new String(notAString);                               //creating a new string using a character array(ASCII byte arrays can be used similarly)
         System.out.println("example.equals(example2): " + example.equals(example2));
-        System.out.println(example.equals(copy));
+        System.out.println("example.equals(copy):" + example.equals(copy));
 
         //Case insensitive comparision for equality
         String reCopy = "ThIs Is A sTrInG";
@@ -72,5 +73,11 @@ class STRING{
         for(String x : list){
             System.out.print(x + ", ");
         }
+
+        //replacing a specific character by another character
+        System.out.println("\nexample.replace(' ', '*'): " + example.replace(' ', '*'));
+
+        //replacing a sequence of characters by another sequence
+        System.out.println("example.replace(\"is\", \"was\"): " + example.replace("is", "was"));
     }
 }
