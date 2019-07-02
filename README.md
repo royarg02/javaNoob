@@ -19,7 +19,8 @@ The concepts are divided as:
 7. Interfaces(implementation, nested interfaces, inheriting interfaces, priority, partial implementation, default, private and static methods)
 8. Multithtreading(Concurrency and creating threads, interthread communication, synchronization, deadlock, and some functions for threads)
 9. Packages(Demonstrates the visibility of the members of a class and the classes itself with respect to inherited or non-inherited classes, and same or different packages)
-10. OOPS_lab(Assignments done during my Java course)
+10. Enumerations(Uses, comparision with classes and some methods)
+11. OOPS_lab(Assignments done during my Java course)
 
 Some references which helped me along the way:
 - Java Documentation at [Oracle](https://docs.oracle.com/en/java)
