@@ -9,7 +9,7 @@ Pre-requisite: Some familiarity with computer programming in any language.
 The concepts are divided as:
 1. Basic(General Structure, print and backslash character constants, command line arguments, operators)
 2. Conditionals and Iteratives(Loops and other control flow statements including the conditional operator)
-3. Data Types(Numeric(including literals), char, boolean, final, typecasting, arrays, var)
+3. Data Types(Numeric(including literals), char, boolean, final, typecasting, arrays, var, type wrappers, autoboxing)
 4. Classes
    - Methods and attributes, constructors, access specifiers, varargs, inner and static classes, inheritance(including features and properties), references, abstract classes.
    - String

@@ -18,9 +18,9 @@ class Methods{
         System.out.println("Ordinal");
         for(Sample A : Sample.values()){
             System.out.println("Enum: " + A.getName() + " Ordinal: " + A.ordinal() + " compareTo(\"JUN\")" + A.compareTo(Sample.JUN));
-            //ordinal() returns the order of the constants which are assigned sequentially from the beginning of the list
+            //ordinal() returns the position of the constant, assigned sequentially as '0' from the beginning of the list
             //ordinal can be compared to the way C/C++ assigns integer values to enumerations
-            //compareTo() compares enums based on the ordinal by the same logic compareTo() works in Strings
+            //compareTo() compares enums based on the differences of their ordinals
         }
         Sample B = Sample.JAN;
         Sample C = Sample.NOV;
