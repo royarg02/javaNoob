@@ -12,7 +12,7 @@ class input{
         bufferTest.MAIN();
         System.out.print("\nNotice the scanner simply skips over the second input");
         //this only happens when a STRING is read after reading any other type of datatype function
-        //the problem with scanner class is analogous to having multiple scanf() functions in C
+        //the problem with scanner class is analogous to having multiple gets() functions in C
     }
 }
 
